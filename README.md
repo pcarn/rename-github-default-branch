@@ -12,12 +12,12 @@ This python script:
 ## Install
 1. Set up a GitHub Personal Access Token
     * Go to https://github.com/settings/tokens, create a token with permission `repo`
-2. Install dependencies
+2. Clone this repo
+3. Install dependencies
 ```bash
 $ pip install PyGithub
 $ pip install gitpython
 ```
-3. Clone this repo
 
 ## Usage
 ```
