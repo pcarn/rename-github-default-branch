@@ -25,8 +25,7 @@ $ pip install gitpython
   -p PATH, --path PATH  Path to Local Repo
   -t TOKEN, --token TOKEN
                         GitHub Personal Access Token
-  -o ORG, --org ORG     GitHub Org Name
-  -r REPO, --repo REPO  Repo Name
+  -r REPO, --repo REPO  org/repo name
   --old-branch OLD_BRANCH
                         Old Branch Name
   --new-branch NEW_BRANCH
@@ -35,7 +34,7 @@ $ pip install gitpython
 
 ## Example
 ```
-$ python change_default_branch.py -p ~/git/my-repo -t token -o pcarn -r my-repo --old-branch master --new-branch main
+$ python change_default_branch.py -p ~/git/my-repo -t token -r pcarn/my-repo --old-branch master --new-branch main
 Renamed local branch from main to master
 Pushed new branch
 Changed PR #2 from base main to master

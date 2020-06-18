@@ -5,8 +5,7 @@ import argparse
 parser = argparse.ArgumentParser(description='Change the default branch of a github repo')
 parser.add_argument('-p', '--path', dest='path', help='Path to Local Repo', required=True)
 parser.add_argument('-t', '--token', dest='token', help='GitHub Personal Access Token', required=True)
-parser.add_argument('-o', '--org', dest='org', help='GitHub Org Name', required=True)
-parser.add_argument('-r', '--repo', dest='repo', help='Repo Name', required=True)
+parser.add_argument('-r', '--repo', dest='repo', help='org/repo name', required=True)
 parser.add_argument('--old-branch', help='Old Branch Name', required=True)
 parser.add_argument('--new-branch', help='New Branch Name', required=True)
 
@@ -20,7 +19,7 @@ print('Pushed new branch')
 
 g = Github(args.token)
 
-repo = g.get_repo('{}/{}'.format(args.org, args.repo))
+repo = g.get_repo(args.repo)
 
 pulls = repo.get_pulls(state='open', base=args.old_branch)
 if pulls.totalCount == 0:
