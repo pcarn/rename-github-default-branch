@@ -9,6 +9,9 @@ This python script:
 * Changes the repo's default branch in GitHub
 * Deletes the old branch from GitHub
 
+### Protected Branches
+GitHub's API does not allow changing the `Branch Pattern Name` of a branch protection rule. You will have to do this as a manual step before running the script.
+
 ## Install
 1. Set up a GitHub Personal Access Token
     * Go to https://github.com/settings/tokens, create a token with permission `repo`
