@@ -34,7 +34,7 @@ $ pip install gitpython
 
 ## Example
 ```
-$ python change_default_branch.py -p ~/git/my-repo -t token -r pcarn/my-repo --old-branch master --new-branch main
+$ python rename_default_branch.py -p ~/git/my-repo -t token -r pcarn/my-repo --old-branch master --new-branch main
 Renamed local branch from main to master
 Pushed new branch
 Changed PR #2 from base main to master
