@@ -22,6 +22,8 @@ $ pip install PyGithub
 $ pip install gitpython
 ```
 
+test
+
 ## Usage
 ```
   -h, --help            show this help message and exit
