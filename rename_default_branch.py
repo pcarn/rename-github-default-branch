@@ -14,7 +14,7 @@ args = parser.parse_args()
 local_repo = Repo(args.path)
 local_repo.git.branch('-m', args.old_branch, args.new_branch)
 print('Renamed local branch from {} to {}'.format(args.old_branch, args.new_branch))
-local_repo.git.push('-u origin', args.new_branch)
+local_repo.git.push('-u', 'origin', args.new_branch)
 print('Pushed new branch')
 
 g = Github(args.token)
